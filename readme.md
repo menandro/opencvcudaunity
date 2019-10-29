@@ -8,7 +8,7 @@
 ## Building Instructions
 This repository contains:
 * Unity/UnityProject - Sample Unity project with simple script, which reads the plugin (DllTest.cs). The script opens a webcam texture and displayed on one of the cubes in scene. It then processes the image (BlurCuda) and displays the output on the other cube.
-http://b2.cvl.iis.u-tokyo.ac.jp/~roxas/opencvcudaunity.png)
+![RGB](http://b2.cvl.iis.u-tokyo.ac.jp/~roxas/opencvcudaunity.png)
 
 * dllhook - .dll project, which hooks the needed functions from opencvcudaunity to Unity.
 * opencvcudaunity - .lib project, where all the functions are defined. 

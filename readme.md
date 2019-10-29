@@ -7,7 +7,7 @@
 
 ## Building Instructions
 This repository contains:
-* Unity/UnityProject - Sample Unity project with simple script, which reads the plugin (DllTest.cs). The script opens a webcam texture and displayed on one of the cubes in scene. It then processes the image (BlurCuda) and displays the output on the other cube.
+* Unity/UnityProject - Sample Unity project with simple script, which reads the plugin (DllTest.cs). The script opens a webcam texture and displays it on one of the cubes in scene. It then processes the image (BlurCuda) and displays the output on the other cube.
 ![RGB](http://b2.cvl.iis.u-tokyo.ac.jp/~roxas/opencvcudaunity.png)
 
 * dllhook - .dll project, which hooks the needed functions from opencvcudaunity to Unity.
@@ -17,6 +17,8 @@ This repository contains:
 OpenCV library paths are defined opencvcudaunity.h. The default location is in "D:/dev/lib64". Modify this to point to your OpenCV installation.
 
 CUDA library path is also defined in opencvcudaunity.h. The default installation from NVIDIA installer is "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/lib/x64/".
+
+After building the solution, copy the output dll file (dllhook.dll) to the Unity project Plugins folder.
 
 ## License
 This project is licensed under the MIT license

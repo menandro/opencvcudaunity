@@ -60,6 +60,8 @@ public class DllTest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!webcamTexture.isPlaying) return;
+
         webcamFrame.SetPixels(webcamTexture.GetPixels());
         pixel = webcamFrame.GetPixels32();
         pixel_handle = GCHandle.Alloc(pixel, GCHandleType.Pinned);
